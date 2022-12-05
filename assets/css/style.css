@@ -1,0 +1,204 @@
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;800&display=swap");
+
+@keyframes fadeout {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  background: #f7fafd;
+}
+
+.bodycontainer {
+  background: #ffffff;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0px 20px 60px rgba(73, 97, 168, 0.05);
+  border-radius: 15px;
+  padding: 24px 16px 29px 16px;
+  gap: 24px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+header {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+header > div {
+  display: flex;
+  gap: 9px;
+}
+
+h2 {
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 25px;
+  color: #1c202b;
+}
+
+.notificationcountercontainer {
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff;
+  background: #0a327b;
+  border-radius: 6px;
+  width: 32px;
+  height: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+button {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: right;
+  color: #5e6778;
+  border: none;
+  background-color: white;
+}
+
+button:hover {
+  color: #0a327b;
+  cursor: pointer;
+}
+
+.notificationcontainer {
+  display: flex;
+  padding: 16px 26px 16px 16px;
+  border-radius: 8px;
+  gap: 12px;
+}
+
+.unread {
+  background: #f7fafd;
+}
+
+.notificationcontainer:hover {
+  cursor: pointer;
+}
+
+.notificationcontainer > div {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+img {
+  width: 39px;
+  height: 39px;
+}
+
+.unread .notificationtext:after {
+  content: " ";
+  width: 8px;
+  height: 8px;
+  background: #f65552;
+  display: inline-block;
+  border-radius: 100%;
+  margin-left: 6px;
+}
+
+.notificationtext {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  color: #5e6778;
+}
+
+a {
+  text-decoration: none;
+  font-weight: 700;
+}
+
+a:hover {
+  font-weight: 800;
+  color: #0a327b;
+}
+
+.profilename {
+  font-weight: 800;
+  font-size: 14px;
+  line-height: 18px;
+  color: #1c202b;
+}
+
+.posttitle {
+  font-size: 14px;
+  line-height: 18px;
+  color: #5e6778;
+}
+
+.time {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  color: #939cad;
+}
+
+.group {
+  font-size: 14px;
+  line-height: 18px;
+  color: #0a327b;
+}
+
+.privatemessage {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  color: #5e6778;
+  border: 1px solid #dde7ee;
+  border-radius: 5px;
+  padding: 16px;
+  margin-top: 12px;
+}
+
+.privatemessage:hover {
+  background: #e5effa;
+  cursor: pointer;
+}
+
+.picturelink {
+  border-radius: 7px;
+  margin-left: auto;
+}
+
+@media (min-width: 1000px) {
+  .bodycontainer {
+    padding: 33px 30px 0 30px;
+  }
+  
+    main {
+    width: 730px;
+    max-height: 839px;
+  }
+}
