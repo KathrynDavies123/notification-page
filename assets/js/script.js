@@ -20,6 +20,6 @@ notificationcontainers.forEach((item) => {
         event.preventDefault();
         item.classList.remove("unread");
         counter -= 1;
-        notificationcounter.innerText = counter;
-    })
+        notificationcounter.innerText = counter;}
+    , {once:true})
 })
