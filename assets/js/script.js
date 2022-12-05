@@ -22,7 +22,7 @@ notificationcontainers.forEach((item) => {
     "click",
     function (event) {
       event.preventDefault();
-      if (item.classList.includes("unread")) {
+      if (item.classList.contains("unread")) {
         item.classList.remove("unread");
         counter -= 1;
         notificationcounter.innerText = counter;
